@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8, suportando caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a página para ser responsiva, adaptando-se ao tamanho da tela do dispositivo -->
+    <title>Jhefferson Santos</title>
+    <!-- Título da página que aparece na aba do navegador -->
+
+    <!-- Definindo o favicon (ícone da página) como emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><text x='0' y='20' font-size='20'>💻</text></svg>">
+    <!-- O emoji de computador é usado como favicon da página -->
+
+    <!-- Link para o arquivo de estilo CSS externo, que contém a estilização da página -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para a biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Jhefferson Santos</h1> <!-- Nome sem o emoji agora -->
+        <!-- Cabeçalho principal com o nome do portfólio -->
+        <nav>
+            <ul>
+                <!-- Lista de navegação com links para diferentes seções da página -->
+                <li><a href="#" onclick="showSection('about')">Sobre mim</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projetos</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contato</a></li>
+                <li><a href="#" onclick="showSection('talents')">Habilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção "Sobre mim", visível por padrão -->
+    <section id="about" class="active">
+        <h2>Sobre mim</h2>
+        <p>Olá, sou Jhefferson Santos, nascido em 2005 e atualmente atuo como analista de suporte de TI N2 em sistemas de saúde pública. Sou estudante de Engenharia de Software desde 2023, em um curso com duração de 8 semestres. Tenho experiência prática em Java, JavaScript, frameworks como Spring Boot e Node.js, além de APIs REST e Python.</p>
+        <p>Possuo habilidades em bancos de dados e estou sempre em busca de aprimorar meus conhecimentos. Sou apaixonado por tecnologia e estou em busca de uma oportunidade como desenvolvedor, estagiário ou trainee, onde possa aplicar meus conhecimentos e crescer profissionalmente.</p>
+
+        <h2>Novidades profissionais</h2>
+        <p>Recentemente, participei de uma imersão em Node.js e APIs REST, onde aprendi sobre a criação de aplicações backend modernas. Além disso, estou aprofundando meus conhecimentos em Java, focando no framework Spring Boot para desenvolver soluções completas e eficientes.</p>
+    </section>
+
+    <!-- Seção de projetos -->
+    <section id="projects" style="display: none;">
+        <h2>Projetos</h2>
+        <ul>
+            <a href="https://github.com/Jhefferson-Santos?tab=projects" target="_blank">
+                <i class="fab fa-github"></i> <!-- Ícone do GitHub -->
+            </a>
+        </ul>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contact" style="display: none;">
+        <h2>Contato</h2>
+        <ul class="icon-list">
+            <!-- Lista de ícones para contato -->
+            <li>
+                <a href="https://api.whatsapp.com/send/?phone=5511984952923&text=Ol%C3%A1+Jhefferson%2C+tudo+bem%3F" target="_blank">
+                    <i class="fab fa-whatsapp"></i> <!-- Ícone do WhatsApp -->
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/jhefferson-vergara-santos-68016b22b/?originalSubdomain=br" target="_blank">
+                    <i class="fab fa-linkedin"></i> <!-- Ícone do LinkedIn -->
+                </a>
+            </li>
+            <li>
+                <a href="mailto:jvergarasantos25@gmail.com?subject=Assunto%20do%20Email&body=Olá%20Jhefferson,%20tudo%20bem?">
+                    <i class="fas fa-envelope"></i> <!-- Ícone do Email -->
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Seção de habilidades técnicas -->
+    <section id="talents" style="display: none;">
+        <h2>Habilidades técnicas</h2>
+        <ul>
+            <li>Java e Spring Boot;</li>
+            <li>JavaScript;</li>
+            <li>Python;</li>
+            <li>Bancos de dados: SQL Server, MySQL;</li>
+            <li>Excel;</li>
+            <li>Node.js;</li>
+            <li>APIs REST.</li>
+        </ul>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = (section.id === sectionId) ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
+ 
+
+
+
+
+
+

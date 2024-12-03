@@ -1,0 +1,138 @@
+/* Reset básico para garantir que todos os elementos sejam exibidos de forma consistente */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas no tamanho total do elemento */
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão para a página */
+    line-height: 1.6; /* Define a altura da linha para uma leitura confortável */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #282c34; /* Cor de fundo escura para o cabeçalho */
+    color: #f4f4f4; /* Cor do texto no cabeçalho */
+    padding: 1rem; /* Espaçamento interno ao redor do conteúdo */
+    text-align: center; /* Centraliza o conteúdo no cabeçalho */
+    border-bottom: 2px solid #61dafb; /* Linha inferior com cor azul clara */
+}
+
+/* Estilo para o nome no cabeçalho, com sublinhado e animação */
+h1 {
+    text-decoration: underline; /* Sublinha o nome */
+    color: rgb(97, 218, 251); /* Cor inicial do nome */
+    transition: color 0.5s ease-in-out; /* Transição suave para a cor */
+}
+
+/* Efeito de hover no nome */
+h1:hover {
+    color: rgb(33, 160, 246); /* Cor do nome quando o mouse passa por cima */
+}
+
+/* Estilo da navegação */
+nav ul {
+    list-style: none; /* Remove a bolinha dos itens da lista */
+    display: flex; /* Exibe os itens de navegação em linha */
+    justify-content: center; /* Centraliza os itens na horizontal */
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaço entre os itens da navegação */
+}
+
+nav ul li a {
+    color: #61dafb; /* Cor dos links de navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: color 0.3s ease; /* Transição suave da cor dos links */
+}
+
+/* Efeito de hover nos links de navegação */
+nav ul li a:hover {
+    color: #21a0f6; /* Cor ao passar o mouse por cima dos links */
+}
+
+/* Estilo das seções do conteúdo */
+section {
+    max-width: 800px; /* Largura máxima das seções */
+    margin: 20px auto; /* Centraliza as seções com margens superior e inferior */
+    padding: 20px; /* Preenchimento interno da seção */
+    background-color: #fff; /* Cor de fundo branca */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para a seção */
+    display: none; /* Esconde as seções inicialmente */
+}
+
+/* Exibe a seção ativa */
+section.active {
+    display: block; /* Exibe a seção que possui a classe "active" */
+}
+
+/* Estilo para a lista de ícones de contato */
+.icon-list {
+    display: flex; /* Exibe os itens da lista em linha */
+    justify-content: center; /* Centraliza os ícones de contato */
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+}
+
+.icon-list li {
+    margin: 0 15px; /* Espaço entre os ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+}
+
+.icon-list li a {
+    color: #61dafb; /* Cor dos links de ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s ease; /* Transição suave para a cor dos links */
+}
+
+/* Efeito de hover nos ícones de contato */
+.icon-list li a:hover {
+    color: #21a0f6; /* Cor do ícone ao passar o mouse */
+}
+
+/* Media Queries para dispositivos menores */
+
+/* Estilos para dispositivos com largura máxima de 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0.5rem; /* Menos preenchimento no cabeçalho para telas menores */
+    }
+
+    nav ul {
+        flex-direction: column; /* Empilha os itens de navegação verticalmente */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Menos espaço entre os itens na navegação */
+    }
+
+    section {
+        padding: 10px; /* Reduz o preenchimento das seções em telas menores */
+        margin: 10px; /* Reduz a margem das seções */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Diminui o tamanho do título para telas menores */
+    }
+
+    .icon-list li {
+        margin: 0 10px; /* Reduz o espaço entre os ícones */
+        font-size: 20px; /* Diminui o tamanho dos ícones */
+    }
+}
+
+/* Estilos para dispositivos com largura mínima de 769px (desktops e notebooks) */
+@media (min-width: 769px) {
+    /* Estilos específicos para desktops podem ser ajustados aqui */
+}
+
+
+
+
+
